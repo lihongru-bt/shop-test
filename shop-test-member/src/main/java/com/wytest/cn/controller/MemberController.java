@@ -1,0 +1,16 @@
+package com.wytest.cn.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MemberController {
+
+    @GetMapping("/getMember")
+    public String getMember(){
+        int i=1/0;
+
+        System.out.println("member被调用了");
+        return "member被调用了";
+    }
+}
